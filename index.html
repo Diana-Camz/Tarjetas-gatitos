@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Gatito-Card</title>
+</head>
+<body onload="mostrarGatito()">
+  <div class="contenedor-1">
+    <div class="contenedor-2">
+      <div class="contenedor-3">
+        <p class="titulo">[ Creador de Tarjetas de Gatitos ]</p>
+      </div>
+
+      <form action="" class="contenedor-form" id="form">
+        <label for="gato-nombre">Dale un nombre al Gatito</label>
+        <input type="text" id="gato-nombre"><br>
+
+        <label for="gato-nombre">¿Tu gatito es Hembra o Macho?
+          <input type="radio" name="gato-sexo" value="hembra">Hembra
+          <input type="radio" name="gato-sexo" value="macho">Macho</label><br>
+
+        <label for="gato-raza" >Selecciona una raza de Gato
+        <select name="gato-raza" id="gato-raza">
+          <option selected disabled>Raza</option>
+          <option value="Naranjos">Naranjoso</option>
+          <option value="Blanquit">Blanquito</option>
+          <option value="Negrit">Negrito</option>
+          <option value="Calic">Calico</option>
+          <option value="Atigrad">Atigrado</option>
+          <option value="Manchad">Manchado</option>
+          <option value="Grisesit">Grisesito</option>
+          <option value="Siames">Siameso</option>
+          <option value="Otro">Otro</option>
+        </select> </label><br>
+
+        <label for="gato-edad">Agregale la edad
+        <input type="number" id="gato-edad"></label><br>
+
+        <label for="gato-peso">Agregale el peso
+        <input type="number" id="gato-peso"></label> <br>
+      </form>
+      
+      <div class="contenedor-5">
+        <button class="boton-crear" onclick="agregarGatito()">Crear Gatito</button>
+      </div>
+
+      <div class="contenedor-6" id="contenedor-6"></div>
+    </div> <!--contenedor-2-->
+
+    <div class="contenedor-infoGatitos" id="contenedor-infoGatitos">
+      <!--
+      <div class="contenedor-gatito1">
+              <div class="contenedor-gatito2">
+                <div class="contenedor-infoGatitos-img">
+                  <img class="imagen-gatito" src="/images/${gatito.raza}.jpg" alt="Imagen Gatito">
+                </div>
+                <div class="contenedor-infoGatitos-info">
+                  <ul class="infoGatitos-ul">
+                    <li><p>Nombre: ${gatito.nombre}</p></li>
+                    <li><p>Raza: ${gatito.raza}o</p></li>
+                    <li><p>Edad: ${gatito.edad}</p></li>
+                    <li><p>Peso: ${gatito.peso}</p></li>
+                  </ul>
+                </div>
+              </div>
+              <button class="boton-eliminar" onclick="eliminarGatito(${gatito._idGatito})">Eliminar Gatito</button>
+            </div>  -->
+    </div>
+  </div> <!--contenedor-1-->
+  <script src="Gatos.js" ></script>
+  <script src="script.js" ></script>
+</body>
+</html>
+
