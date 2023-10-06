@@ -1,11 +1,5 @@
 // ARRAY DONDE SE AGREGAN LOS OBJETOS CREADOS
 const gatitos = [
-  new Gato("Silvestre", "macho", "Negrit", "2", "6"),
-  new Gato("Dianita", "hembra", "Calic", "2", "5"),
-  new Gato("Parches", "hembra", "Calic", "2", "6"),
-  new Gato("Dobinson", "macho", "Blanquit", "2", "5"),
-  new Gato("Macsi", "macho", "Manchad", "2", "6"),
-  new Gato("Ponchito", "macho", "Atigrad", "2", "5")
 ];
 
 
