@@ -41,15 +41,16 @@ function mostrarGatito(){
 
 //FUNCION CREADORA DE OBJETOS
 function agregarGatito() {
-  const forma = document.forms["form"];
-  const nombre = forma["gato-nombre"];
-  const sexo = forma["gato-sexo"];
-  const raza = forma["gato-raza"];
-  const edad = forma["gato-edad"];
-  const peso = forma["gato-peso"];
+  const form = document.forms["form"];
+  const nombre = form["gato-nombre"];
+  const sexo = form["gato-sexo"];
+  const raza = form["gato-raza"];
+  const edad = form["gato-edad"];
+  const peso = form["gato-peso"];
 
   const gatito = new Gato(nombre.value, sexo.value, raza.value, edad.value, peso.value);
   gatitos.push(gatito);
+  form.reset()
   mostrarGatito();
 };
 
