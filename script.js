@@ -12,13 +12,13 @@ function mostrarGatito(){
         document.getElementById("contenedor-6").innerHTML = " ";
       }, 4000)
     texto += ` 
-            <div class="contenedor-gatito1">
-              <div class="contenedor-gatito2">
-                <div class="contenedor-infoGatitos-img">
-                  <img class="imagen-gatito" src="/images/${gatito.raza}.jpg" alt="Imagen Gatito">
+            <div class="contenedor__infoGatito">
+              <div class="contenedor__info">
+                <div class="contenedor__img">
+                  <img class="imagen" src="/images/${gatito.raza}.jpg" alt="Imagen Gatito">
                 </div>
-                <div class="contenedor-infoGatitos-info">
-                  <ul class="infoGatitos-ul">
+                <div class="informacion">
+                  <ul class="informacion__lista">
                     <li><p>Nombre: ${gatito.nombre}</p></li>
                     <li><p>Raza: ${gatito.raza}o</p></li>
                     <li><p>Edad: ${gatito.edad}</p></li>
@@ -26,7 +26,7 @@ function mostrarGatito(){
                   </ul>
                 </div>
               </div>
-              <button class="boton-eliminar" onclick="eliminarGatito(${gatito._idGatito})">Eliminar Gatito</button>
+              <button class="btn__eliminar" onclick="eliminarGatito(${gatito._idGatito})">Eliminar Gatito</button>
             </div>`;
   }
   document.getElementById("contenedor-infoGatitos").innerHTML = texto;

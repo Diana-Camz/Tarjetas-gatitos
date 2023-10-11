@@ -2,106 +2,112 @@
   font-family: cat-paw;
   src: url(cat-paw.ttf);
 }
-
-.contenedor-1{
-  @media (max-width: 900px) {
-    width:100%;
-    border: solid 5px orange;
-  }
+.contenedor{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-.contenedor-2{
-  height: 450px;
-  @media (max-width: 900px) {
-    width: auto;
-    height: 100%;
-    align-items: center;
+/*------------------ xs ------------------*/
+@media (min-width: 475px){
+  .contenedor{
+    max-width: 475px;
+  }
+  .header__titulo{ 
+    font-family: 'cat-paw';
+    text-align: center;
+    border: solid 1px orange;
+  }
+  .titulo{
+    font-size: 35px;
+    text-align: center;
+  }
+  .contenedor__form{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    border: solid 1px red;
+  }
+  .contenedor__btn{
+    display: flex;
+    justify-content: center;
     border: solid 5px blue;
   }
-}
-
-.contenedor-3{
-  width: auto;
-  font-size: 60px;
-  font-family: 'cat-paw';
-  text-align: center;
-  margin: auto;
-  @media (max-width: 900px) {
-    font-size: 30px;
-    margin: 0;
+  .btn__crear{
+    padding: 10px 20px;
+    background-color: #DFAB76;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+      background-color: #D09F6E;
+    }
+  }
+  .contenedor__texto{
+    margin-top: 20px;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color:#5A3715;
+    border: solid 5px yellow;
+  }
+  .contenedor__infoGatitos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: solid 5px green;
   }
 }
-
-.titulo{
-  @media (max-width: 900px) {
+/*------------------ sm ------------------*/
+@media (min-width: 640px){
+  .contenedor{
+    max-width: 640px;
+  }
+}
+/*------------------ md ------------------*/
+@media (min-width: 768px){
+  .contenedor{
+    max-width: 768px;
+  }
+  .titulo{
+    font-size: 50px;
+  }
+  .contenedor__texto{
+    font-size: 25px;
+  }
+  .contenedor__infoGatitos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/*----------------- lg -------------------*/
+@media (min-width: 1024px){
+  .contenedor{
+    max-width: 1024px;
+  }
+  .titulo{
+    font-size: 60px;
+  }
+  .contenedor__form{
     text-align: center;
   }
 }
-
-.contenedor-5{
-  display: flex;
-  justify-content: center;
-  /*width: 250px;
-  margin: auto;*/
-  padding-top: 10px;
-  @media (max-width: 900px) {
-    border: solid 5px red;
-  }
-  /*border: solid 5px blue;*/
-}
-
-.contenedor-6{
-  height: 30px;
-  margin-top: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  color:#5A3715;
-  @media (max-width: 900px) {
-    border: solid 5px yellow;
+/*----------------- xl -------------------*/
+@media (min-width: 1280px){
+  .contenedor{
+    max-width: 1280px;
   }
 }
 
-.contenedor-form{
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  width: 500px;
-  margin: auto;
-  height: 150px;
-  @media (max-width: 900px) {
-    width: auto;
-  }
-}
 
-.boton-crear{
-  margin: auto;
-  padding: 10px 20px;
-  background-color: #DFAB76;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  &:hover{
-    background-color: #D09F6E;
-  }
-}
-
-.contenedor-infoGatitos{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  @media (max-width: 900px) {
-    margin-top:150px;
-    border: solid 5px pink;
-  }
-}
-
-.contenedor-gatito1{
+.contenedor__infoGatito{
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
@@ -111,7 +117,7 @@
   border-radius: 20px;
 }
 
-.contenedor-gatito2{
+.contenedor__info{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -120,29 +126,29 @@
 
 }
 
-.contenedor-infoGatitos-img{
+.contenedor__img{
   max-width: 150px;
 }
 
-.imagen-gatito{
+.imagen{
   max-width: 150px;
   max-height: 170px;
   border-radius: 20px 0 0 20px;
 }
 
-.contenedor-infoGatitos-info{
+.informacion{
   width: 160px;
   background-color: #E5DDD5;
   border-radius: 0 20px 0 0;
 }
 
-.infoGatitos-ul{
+.informacion__lista{
   list-style: none;
   text-align: left;
   padding: 0px 0px 0px 10px;
 }
 
-.boton-eliminar{
+.btn__eliminar{
   padding: 10px 20px;
   background-color: #EF958C;
   color: white;

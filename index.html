@@ -10,20 +10,18 @@
   <title>Gatito-Card</title>
 </head>
 <body onload="mostrarGatito()">
-  <div class="contenedor-1">
-    <div class="contenedor-2">
-      <div class="contenedor-3">
-        <p class="titulo">[ Creador de Tarjetas de Gatitos ]</p>
-      </div>
+  <header class="header__titulo contenedor">
+    <p class="titulo">[ Creador de Tarjetas de Gatitos ]</p>
+  </header>
 
-      <form action="" class="contenedor-form" id="form">
+  <main>
+    <section class="contenedor">
+      <form action="" class="contenedor__form" id="form">
         <label for="gato-nombre">Dale un nombre al Gatito</label>
-        <input type="text" id="gato-nombre" autocomplete="off"><br>
-
-        <label for="gato-nombre">¿Tu gatito es Hembra o Macho?
+        <input type="text" id="gato-nombre" autocomplete="off" placeholder="Nombre"><br><br>
+        <label for="gato-nombre">¿Tu gatito es Hembra o Macho? <br>
           <input type="radio" name="gato-sexo" value="hembra">Hembra
-          <input type="radio" name="gato-sexo" value="macho">Macho</label><br>
-
+          <input type="radio" name="gato-sexo" value="macho">Macho</label><br><br>
         <label for="gato-raza" >Selecciona una raza de Gato
         <select name="gato-raza" id="gato-raza">
           <option selected disabled>Raza</option>
@@ -36,42 +34,39 @@
           <option value="Grisesit">Grisesito</option>
           <option value="Siames">Siameso</option>
           <option value="Otr">Otro</option>
-        </select> </label><br>
-
+        </select> </label><br><br>
         <label for="gato-edad">Agregale la edad
-        <input type="number" id="gato-edad"></label><br>
-
+        <input type="number" id="gato-edad" placeholder="Edad en años"></label><br><br>
         <label for="gato-peso">Agregale el peso
-        <input type="number" id="gato-peso"></label> <br>
+        <input type="number" id="gato-peso" placeholder="Peso en kilos"></label><br><br>
       </form>
-      
-      <div class="contenedor-5">
-        <button class="boton-crear" onclick="agregarGatito()">Crear Gatito</button>
-      </div>
+    </section> <!--contenedor-2-->
 
-      <div class="contenedor-6" id="contenedor-6"></div>
-    </div> <!--contenedor-2-->
+    <section class="contenedor contenedor__btn">
+      <button class="btn__crear" onclick="agregarGatito()">Crear Gatito</button>
+    </section>
 
-    <div class="contenedor-infoGatitos" id="contenedor-infoGatitos">
+    <section class="contenedor contenedor__texto" id="contenedor-6">Texto de pruebaTexto de pruebaTexto de pruebaTexto de pruebaTexto de pruebaTexto de prueba</section>
+    <section class="contenedor contenedor__infoGatitos" id="contenedor-infoGatitos">
       <!--
-      <div class="contenedor-gatito1">
-              <div class="contenedor-gatito2">
-                <div class="contenedor-infoGatitos-img">
-                  <img class="imagen-gatito" src="/images/${gatito.raza}.jpg" alt="Imagen Gatito">
-                </div>
-                <div class="contenedor-infoGatitos-info">
-                  <ul class="infoGatitos-ul">
-                    <li><p>Nombre: ${gatito.nombre}</p></li>
-                    <li><p>Raza: ${gatito.raza}o</p></li>
-                    <li><p>Edad: ${gatito.edad}</p></li>
-                    <li><p>Peso: ${gatito.peso}</p></li>
-                  </ul>
-                </div>
-              </div>
-              <button class="boton-eliminar" onclick="eliminarGatito(${gatito._idGatito})">Eliminar Gatito</button>
-            </div>  -->
-    </div>
-  </div> <!--contenedor-1-->
+      <div class="contenedor__infoGatito">
+        <div class="contenedor__info">
+          <div class="contenedor__img">
+            <img class="imagen" src="/images/${gatito.raza}.jpg" alt="Imagen Gatito">
+          </div>
+          <div class="informacion">
+            <ul class="informacion__lista">
+              <li><p>Nombre: ${gatito.nombre}</p></li>
+              <li><p>Raza: ${gatito.raza}o</p></li>
+              <li><p>Edad: ${gatito.edad}</p></li>
+              <li><p>Peso: ${gatito.peso}</p></li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn__eliminar" onclick="eliminarGatito(${gatito._idGatito})">Eliminar Gatito</button>
+      </div>  -->
+          </section>
+  </main> <!--contenedor-1-->
   <script src="Gatos.js" ></script>
   <script src="script.js" ></script>
 </body>
