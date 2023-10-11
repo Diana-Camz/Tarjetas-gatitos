@@ -10,9 +10,9 @@
   padding-right: 15px;
 }
 /*------------------ xs ------------------*/
-@media (min-width: 450px){
+@media (min-width: 380px){
   .contenedor{
-    max-width: 450px;
+    max-width: 380px;
   }
   .header__titulo{ 
     font-family: 'cat-paw';
