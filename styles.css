@@ -3,10 +3,18 @@
   src: url(cat-paw.ttf);
 }
 
+.contenedor-1{
+  @media (max-width: 900px) {
+    width:100%;
+    border: solid 5px orange;
+  }
+}
+
 .contenedor-2{
   height: 450px;
   @media (max-width: 900px) {
-    height: 400px;
+    width: auto;
+    height: 100%;
     align-items: center;
     border: solid 5px blue;
   }
@@ -19,19 +27,18 @@
   text-align: center;
   margin: auto;
   @media (max-width: 900px) {
+    font-size: 30px;
+    margin: 0;
     border: solid 5px green;
   }
 }
 
-.contenedor-4{
-  display: flex;
-  justify-content: center;
-  width: 250px;
-  margin: auto;
+.titulo{
   @media (max-width: 900px) {
-    border: solid 5px red;
+    text-align: center;
   }
 }
+
 .contenedor-5{
   display: flex;
   justify-content: center;
@@ -62,6 +69,9 @@
   width: 500px;
   margin: auto;
   height: 150px;
+  @media (max-width: 900px) {
+    width: auto;
+  }
 }
 
 .boton-crear{
