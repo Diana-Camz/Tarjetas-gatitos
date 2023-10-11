@@ -2,17 +2,14 @@
   font-family: cat-paw;
   src: url(cat-paw.ttf);
 }
-.contenedor{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 /*------------------ xs ------------------*/
 @media (min-width: 380px){
   .contenedor{
     max-width: 380px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header__titulo{ 
     font-family: 'cat-paw';
@@ -73,6 +70,11 @@
 @media (min-width: 768px){
   .contenedor{
     max-width: 768px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .titulo{
     font-size: 50px;
