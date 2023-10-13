@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
           <input type="radio" name="gato-sexo" value="macho">Macho</label><br><br>
         <label for="gato-raza" >Selecciona una raza de Gato
         <select name="gato-raza" id="gato-raza">
-          <option selected disabled>Raza</option>
+          <option selected disabled value="Raza">Raza</option>
           <option value="Naranjos">Naranjoso</option>
           <option value="Blanquit">Blanquito</option>
           <option value="Negrit">Negrito</option>
@@ -46,29 +46,11 @@
       <button class="btn__crear" onclick="agregarGatito()">Crear Gatito</button>
     </section>
 
-    <section class="contenedor contenedor__texto" id="contenedor-6">Texto de pruebaTexto de pruebaTexto de pruebaTexto de pruebaTexto de pruebaTexto de prueba</section>
-    <section class="contenedor contenedor__infoGatitos" id="contenedor-infoGatitos">
-      <!--
-      <div class="contenedor__infoGatito">
-        <div class="contenedor__info">
-          <div class="contenedor__img">
-            <img class="imagen" src="/images/${gatito.raza}.jpg" alt="Imagen Gatito">
-          </div>
-          <div class="informacion">
-            <ul class="informacion__lista">
-              <li><p>Nombre: ${gatito.nombre}</p></li>
-              <li><p>Raza: ${gatito.raza}o</p></li>
-              <li><p>Edad: ${gatito.edad}</p></li>
-              <li><p>Peso: ${gatito.peso}</p></li>
-            </ul>
-          </div>
-        </div>
-        <button class="btn__eliminar" onclick="eliminarGatito(${gatito._idGatito})">Eliminar Gatito</button>
-      </div>  -->
-          </section>
+    <section class="contenedor contenedor__texto" id="contenedor__texto"></section>
+    <section class="contenedor contenedor__infoGatitos" id="contenedor__infoGatitos"></section> <!--CONTENEDOR DONDE SE INSERTAN LAS NUEVAS TARJETAS DE GATITOS-->
   </main> <!--contenedor-1-->
-  <script src="Gatos.js" ></script>
-  <script src="script.js" ></script>
+  <script src="/js/Gatos.js" ></script>
+  <script src="/js/script.js" ></script>
 </body>
 </html>
 

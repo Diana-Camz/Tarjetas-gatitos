@@ -7,15 +7,15 @@ const gatitos = [
 function mostrarGatito(){
   let texto = "";
   for(let gatito of gatitos){
-    document.getElementById("contenedor-6").innerHTML = gatito.toString();
+    document.getElementById("contenedor__texto").innerHTML = gatito.toString();
       setTimeout(() => {
-        document.getElementById("contenedor-6").innerHTML = " ";
-      }, 4000)
+        document.getElementById("contenedor__texto").innerHTML = " ";
+      }, 6000)
     texto += ` 
             <div class="contenedor__infoGatito">
               <div class="contenedor__info">
                 <div class="contenedor__img">
-                  <img class="imagen" src="/images/${gatito.raza}.jpg" alt="Imagen Gatito">
+                  <img class="imagen" src="css/images/${gatito.raza}.jpg" alt="Imagen Gatito">
                 </div>
                 <div class="informacion">
                   <ul class="informacion__lista">
@@ -29,7 +29,7 @@ function mostrarGatito(){
               <button class="btn__eliminar" onclick="eliminarGatito(${gatito._idGatito})">Eliminar Gatito</button>
             </div>`;
   }
-  document.getElementById("contenedor-infoGatitos").innerHTML = texto;
+  document.getElementById("contenedor__infoGatitos").innerHTML = texto;
   
 }
 
@@ -42,10 +42,17 @@ function agregarGatito() {
   const edad = form["gato-edad"];
   const peso = form["gato-peso"];
 
-  const gatito = new Gato(nombre.value, sexo.value, raza.value, edad.value, peso.value);
-  gatitos.push(gatito);
-  form.reset()
-  mostrarGatito();
+  if(raza.value==="Raza" || !nombre.value || !sexo.value || !edad.value || !peso.value){
+    document.getElementById("contenedor__texto").innerHTML = "Porfavor, llena todos los campos";
+    setTimeout(() => {
+      document.getElementById("contenedor__texto").innerHTML = " ";
+    }, 4000);
+  } else {
+    const gatito = new Gato(nombre.value, sexo.value, raza.value, edad.value, peso.value);
+    gatitos.push(gatito);
+    form.reset();
+    mostrarGatito();
+  }
 };
 
 //FUNCION QUE ELIMINA EL INDICE DEL ARRAY SELECCIONADO
