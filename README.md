@@ -14,7 +14,7 @@ Una página donde practico la creación de objetos y cómo eliminarlos con Javas
 1. Clona este repositorio:
    `git clone https://github.com/Diana-Camz/Tarjetas-gatitos.git`
 
-2. Visita `http://localhost:3000` en tu navegador para que veas el contenido del proyecto.
+2. Abre el proyecto en tu editor de código y visualizalo en el navegador con Live Server.
 
 ## Sitio Web del proyecto
 Puedes ver el sitio web el proyecto en el siguiente link: `https://tarjetas-gatitos.netlify.app/`
